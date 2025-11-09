@@ -7,16 +7,13 @@ import { JwtModule } from '@nestjs/jwt';
 //import { UsuarioModule } from './usuario2/usuario.module';
 import { AuthModule } from './auth/auth.module';
 import { HelpersModule } from './helpers/helpers.module';
-import { EventoModule } from './evento/evento.module';
-import { CustomCalendarModule } from './custom-calendar/custom-calendar.module';
-import { RelationshipCalendarModule } from './relationship-calendar/relationship-calendar.module';
-import { EventsRelationshipModule } from './events-relationship/events-relationship.module';
 import { CategoriaModule } from './categoria/categoria.module';
 import { CatFormaPagoModule } from './cat-forma-pago/cat-forma-pago.module';
 //import { UsuarioModule } from './usuario/usuario.module';
 import { ProductoModule } from './producto/producto.module';
 import { CarritoModule } from './carrito/carrito.module';
 import { PedidoModule } from './pedido/pedido.module';
+import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [
@@ -41,10 +38,7 @@ import { PedidoModule } from './pedido/pedido.module';
     ConfigModule.forRoot({ isGlobal: true }),
     //UsuarioModule,
     AuthModule,
-    EventoModule,
-    CustomCalendarModule,
-    RelationshipCalendarModule,
-    EventsRelationshipModule,
+    UsuarioModule,
     CategoriaModule,
     CatFormaPagoModule,
     ProductoModule,
